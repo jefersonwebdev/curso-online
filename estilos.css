@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    font-family: "Roboto";
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    padding: 20px;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+header ul li a {
+    display: block;
+    padding: 8px;
+    color: #6b7385;
+}
+
+.newsletter {
+    height: 100vh;
+    background-color: #2f57ef;
+    max-width: 100%;
+}
+
+.newsletter h2, p {
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.newsletter-body {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+footer {
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.footer-cta {
+    max-width: 290px;
+    margin-right: 20px;
+}
+
+.footer-cta img {
+    max-height: 50px;
+}
+
+.footer-cta p {
+    color: #6b7385;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-cta a {
+    padding: 10px 25px;
+    border: 3px solid #637FEA;
+    height: 44px;
+    display: block;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 1.2s ease-in-out;
+}
+
+.footer-cta a:hover {
+    scale: 1.2;
+}
+
+.footer-menu {
+    margin-right: 20px;
+}
+
+.footer-menu h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-menu a {
+    display: block;
+    padding: 8px 8px 8px 0;
+    color: #6b7385;
+}
+
+.footer-menu a:hover {
+    color: #0d6efd;
+}
+
+
+
+.footer-menu span {
+    color: #6b7385;
+}
+
+.redes-sociais i {
+    color: #6b7385;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.redes-sociais i:hover {
+    color: #0d6efd;
+}
+
+.footer-bottom {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 14px;
+    border-top: 1px solid #e6e3f1;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    display: block;
+    padding: 8px;
+    color: #6b7385;
+}
+
+.footer-bottom a:hover {
+    color: #0d6efd;
+}
