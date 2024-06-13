@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,29 +13,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>Study | Sua escola Online</title>
 </head>
+
 <body>
-    
-    <header class="flex">
-        <img src="./img/logo.png" alt="">
-        <ul class="flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Elements</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
+    <!-- Header -->
+    <header>
+        <div class="header-content flex">
+            <img src="./img/logo.png" alt="logo">
+            <ul class="flex">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class="newsletter">
-        <div class="newsletter-body">
-            <h2>Subscribe Our Newsletter</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam explicabo sit est eos earum reprehenderit inventore nam autem corrupti rerum!</p>
-            <input type="email" placeholder="Enter Your E-Email">
-            <button type="submit">Subscribe</button>
+    <!-- Banner -->
+    <section id="banner" class="banner">
+        <div class="banner-body flex">
+            <div class="banner-text">
+                <h1>Your success journey start with us!</h1>
+                <p>Eduplan Education Can Fulfil Your International Education Dream
+                    As Per Your Best Fit with world top universities and collages.</p>
+                <a href="#">Contato</a>
+            </div>
+            <img src="./img/menina-morena-oculos.webp" alt="menina morena com oculos segurando livros">
         </div>
+        
+
+    </section>
+
+    <section class="newsletter">
+            
+            <div class="newsletter-body flex border">
+                <div class="icon">
+                    <img src="./img/newsletter.png" alt="carta aberta">
+                </div>
+                <div>
+                    <h2>Subscribe Our Newsletter</h2>
+                    <p>Enter your mail address to get our updates, offer and study abroad related all updates</p>
+                </div>
+                <input type="email" placeholder="Enter Your E-mail">
+                <button type="submit">Subscribe</button>
+            </div>
+
     </section>
 
     <footer>
