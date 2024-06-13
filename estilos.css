@@ -60,6 +60,11 @@ p {
     padding: 20px;
 }
 
+.container-img {
+    flex: 1;
+    overflow: hidden;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
