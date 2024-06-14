@@ -371,6 +371,17 @@ footer {
     color: #0d6efd;
 }
 
+@media screen and (max-width: 576px) {
+    .container-img {
+       width: 100%;
+    }
+
+    .container-text {
+        width: 100%;
+    } 
+
+}
+
 @media screen and (max-width: 500px) { 
     .banner-body img {
         width: 100%;
