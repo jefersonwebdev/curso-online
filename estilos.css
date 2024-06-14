@@ -53,6 +53,8 @@ p {
     margin: 0 auto;
     justify-content: space-between;
     position: relative;
+    display: flex;
+    padding: 20px;
 }
 
 .container-text {
@@ -61,8 +63,10 @@ p {
 }
 
 .container-img {
-    flex: 1;
-    overflow: hidden;
+    /*flex: 1;
+    overflow: hidden;*/
+    width: 50%;
+    padding: 20px;
 }
 
 .container-img img {
@@ -139,12 +143,14 @@ header ul li a:hover {
 
 .banner-body h1 {
     font-size: 48px;
-    color: #333
+    color: #333;
+    width: 100%;
 }
 
 .banner-body p {
     font-size: 20px;
     color: #6b7385;
+    width: 100%;
 }
 
 .banner-text {
@@ -371,18 +377,23 @@ footer {
     color: #0d6efd;
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 700px) {
     .container-img {
        width: 100%;
     }
 
     .container-text {
-        width: 100%;
+        max-width: 100%;
+        margin: 0;
     } 
+
+    header ul li a {
+        display: none;
+    }
 
 }
 
-@media screen and (max-width: 500px) { 
+/*@media screen and (max-width: 500px) { 
     .banner-body img {
         width: 100%;
     }
@@ -390,4 +401,4 @@ footer {
     .banner-text {
         width: 100%;
     }
-}
+} */
