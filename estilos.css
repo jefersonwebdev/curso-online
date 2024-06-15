@@ -32,7 +32,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    color: #333;
+    color: var(--cinza-escuro);
     font-family: "Roboto";
 }
 
@@ -40,8 +40,15 @@ h1 {
     border-bottom: 0.5rem;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
 p {
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .border {
@@ -80,12 +87,24 @@ p {
     flex-wrap: wrap;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.align-itens-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 section {
-    min-height: 100vh;
+    min-height: fit-content;
     /*margin-top: 0;
     margin-bottom: 0;*/
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 }
 
 header {
@@ -128,9 +147,10 @@ header ul li a:hover {
 }
 
 .banner {
-    min-height: 100vh;
+    min-height: fit-content;
     max-width: 100%;
     align-items: center;
+    padding-bottom: 0;
 }
 
 .banner-body {
@@ -202,24 +222,53 @@ header ul li a:hover {
     height: auto;
 }*/
 
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 30%;
+    background-color: var(--Background-Light);
+    border: 1px solid var(--Border-Light);
+    margin: 10px 10px 10px 0;
+    width: 30%;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h6 {
+    color: var(--cinza-escuro);
+    font-size: 20px;
+}
+
+.card-content ul li i {
+    color: var(--Yellow);
+}
+
 .newsletter {
-    height: 100vh;
+    height: fit-content;
     background-color: var(--Blue);
     max-width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.newsletter h2, p {
-    color: #fff;
-}
-
 .newsletter h2 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .newsletter p {
+    color: #fff;
     font-size: 18px;
     margin-bottom: 30px;
     text-align: center;
@@ -249,16 +298,26 @@ header ul li a:hover {
     background-color: #fff;
     width: 80%;
     font-size: 18px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border: 1px solid #fff;
     outline: none;
     margin-top: 20px;
 }
 
-.newsletter-body button {
+.newsletter-body a {
     height: 50px;
     padding: 20px;
-    background-color: #637FEA;
+    width: 20%;
+    background-color: var(--Red);
+    color: #fff;
+    display: block;
+    align-self: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .icon {
@@ -365,6 +424,8 @@ footer {
     padding-top: 14px;
     border-top: 1px solid #e6e3f1;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-bottom a {
