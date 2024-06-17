@@ -99,6 +99,11 @@ p {
     flex-direction: column;
 }
 
+.gap {
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
 section {
     min-height: fit-content;
     /*margin-top: 0;
@@ -177,7 +182,7 @@ header ul li a:hover {
     width: 50%;
 }
 
-.banner-text a {
+.banner-button {
     display: block;
     border: 1px solid var(--Blue);
     border-radius: 50px;
@@ -190,7 +195,7 @@ header ul li a:hover {
     width: fit-content;
 }
 
-.banner-text a:hover {
+.banner-button:hover {
     border: 1px solid var(--Blue);
     background-color: #fff;
     color: var(--Blue);
@@ -249,8 +254,46 @@ header ul li a:hover {
     font-size: 20px;
 }
 
+.card-content i {
+    font-size: 28px;
+}
+
 .card-content ul li i {
     color: var(--Yellow);
+}
+
+#vantagens {
+    background-color: #fff;
+}
+
+.card-vantagens {
+    background-color: #fff;
+    padding: 16px;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-vantagens:hover {
+    box-shadow: var(--Sombra)
+}
+
+.card-vantagens i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-vantagens p {
+    color: var(--cinza);
+}
+
+.card-vantagens h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .newsletter {
