@@ -48,11 +48,27 @@ h2 {
 
 p {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+ol li {
+    list-style:decimal;
 }
 
 .border {
     border: 1px solid red;
+}
+
+#main {
+    padding-top: 100px;
+    background-color: var(--Background-Light);
+    min-height: 100vh;
+}
+
+#main p {
+    line-height: 1.5;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .container {
