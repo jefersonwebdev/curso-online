@@ -247,13 +247,12 @@ header ul li a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 30%;
     background-color: var(--Background-Light);
     border: 1px solid var(--Border-Light);
     margin: 10px 10px 10px 0;
-    width: 30%;
+    width: 32%;
     overflow: hidden;
-    min-width: 300px;
+    /*min-width: 300px;*/
 }
 
 .card-img img {
@@ -263,6 +262,7 @@ header ul li a:hover {
 
 .card-content {
     padding: 20px;
+    justify-content: space-between;
 }
 
 .card-content h6 {
@@ -274,8 +274,17 @@ header ul li a:hover {
     font-size: 28px;
 }
 
+.card-content ul {
+    align-items: center;
+}
+
 .card-content ul li i {
     color: var(--Yellow);
+}
+
+.star-icon{
+    color: var(--Yellow);
+    font-size: 40px;
 }
 
 #vantagens {
@@ -285,11 +294,12 @@ header ul li a:hover {
 .card-vantagens {
     background-color: #fff;
     padding: 16px;
-    width: 30%;
+    width: 32%;
     height: auto;
     border-radius: 20px;
     justify-content: center;
     text-align: center;
+    margin: 10px 10px 10px 0;
 }
 
 .card-vantagens:hover {
@@ -352,31 +362,36 @@ header ul li a:hover {
 }
 
 .newsletter-body input {
-    height: 50px;
+    /*height: 44px;*/
     padding: 20px;
     background-color: #fff;
     width: 80%;
     font-size: 18px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     border: 1px solid #fff;
     outline: none;
     margin-top: 20px;
 }
 
+.newsletter-body input:focus {
+    background-color: var(--Background-Light);
+}
+
 .newsletter-body a {
-    height: 50px;
+    /*height: 44px;*/
     padding: 20px;
     width: 20%;
     background-color: var(--Red);
     color: #fff;
     display: block;
     align-self: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
+    border: 1px solid var(--Red);
 }
 
 .icon {
@@ -497,6 +512,18 @@ footer {
     color: #0d6efd;
 }
 
+@media screen and (max-width: 990px) {
+
+    .card-vantagens {
+        width: 48%;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
     .container-img {
        width: 100%;
@@ -507,11 +534,17 @@ footer {
         margin: 0;
     } 
 
-    header ul li a {
-        display: none;
+    .card-vantagens {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
     }
 
 }
+
+
 
 /*@media screen and (max-width: 500px) { 
     .banner-body img {
@@ -522,3 +555,86 @@ footer {
         width: 100%;
     }
 } */
+
+
+
+
+
+
+/* Menu responsivo*/
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--Max-Width);
+    margin: 0 auto;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: var(--Background-Light);
+}
+
+/* Estilos para menu responsivo */
+#menu-toggle {
+    display: none;
+}
+
+label[for="menu-toggle"] {
+    cursor: pointer;
+    font-size: 24px;
+    color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--Background-Light);
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 8px 16px;
+    }
+
+    label[for="menu-toggle"] {
+        color: var(--cinza-escuro);
+    }
+}

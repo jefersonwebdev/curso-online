@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeferson Guimarães">
+    <meta name="description" content="Descubra uma nova maneira de aprender com a Escola Online XYZ. Oferecemos cursos práticos e acessíveis em diversas áreas, com instrutores especializados. Inscreva-se agora e comece a transformar seu futuro hoje mesmo!">
+    <meta name="keywords" content="escola online, cursos online, educação a distância, aprendizado online, instrutores qualificados, ensino prático">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,10 +20,29 @@
     
     <link rel="stylesheet" href="estilos.css">
     <title>Study | Sua escola Online</title>
+
 </head>
 
 <body>
     <!-- Header -->
+    
+    <header>
+        <div class="header-content">
+            <img src="./img/logo.png" alt="logo">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 
     <header>
         <div class="header-content flex">
             <img src="./img/logo.png" alt="logo">
@@ -31,6 +56,8 @@
             </ul>
         </div>
     </header>
+    -->
+
 
     <!-- Banner -->
     <section id="banner" class="banner">
@@ -68,7 +95,7 @@
 
         <div class="container flex-column">
             <h2>Cursos</h2>
-            <div class="flex">
+            <div class="flex space-between">
 
                 <!-- Card 1-->        
                 <div class="card">
@@ -84,18 +111,23 @@
                         <p>Aprenda a desenvolver aplicações web completas, dominando tanto o frontend (HTML, CSS, JavaScript) quanto o backend (Node.js, MongoDB, Express), além de frameworks modernos como React e Angular.</p>
                         
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
+                                    <li><p class="star-icon">★</p></li>
+                                    <li><p class="star-icon">★</p></li>
+                                    <li><p class="star-icon">★</p></li>
+                                    <li><p class="star-icon">★</p></li>
+                                    <li><p class="star-icon">☆</p></li>
+                                    <!-- <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li> -->
                                 </ul>
                                 <span>5.0</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>946</span>
                             </div>
@@ -112,24 +144,30 @@
                         </a>                
                     </div>
 
-                    <div class="card-content">
-                        <h6>Inteligencia Artificial</h6>
-                        <p>Prof. Lucas Santos</p>
-                        <p>Explore os fundamentos da Inteligência Artificial (IA), incluindo aprendizado de máquina, redes neurais e aplicações práticas em diversas áreas como saúde, finanças e automação.</p>
-                        
+                    <div class="card-content space-between">
+                        <div>
+                            <h6>Inteligencia Artificial</h6>
+                            <p>Prof. Lucas Santos</p>
+                            <p>Explore os fundamentos da Inteligência Artificial (IA), incluindo aprendizado de máquina, redes neurais e aplicações práticas em diversas áreas como saúde, finanças e automação.</p>
+                        </div>
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
-                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><p class="star-icon">&#9733;</p></li>
+                                    <li><p class="star-icon">&#9733;</p></li>
+                                    <li><p class="star-icon">&#9733;</p></li>
+                                    <li><p class="star-icon">&#9734;</p></li>
+                                    <li><p class="star-icon">&#9734;</p></li>
+                                    <!-- <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star-half-stroke"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li> -->
                                 </ul>
                                 <span>3.5</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>531</span>
                             </div>
@@ -152,7 +190,7 @@
                         <p>Aprenda os princípios fundamentais e práticos de User Interface (UI) e User Experience (UX) design. Este curso abrange desde a pesquisa de usuário e prototipagem até o design responsivo, focando na criação de interfaces intuitivas e experiências do usuário eficazes em diferentes plataformas e dispositivos.</p>
                         
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
@@ -163,7 +201,7 @@
                                 <span>4.9</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>1.861</span>
                             </div>
@@ -180,13 +218,14 @@
                         </a>                
                     </div>
 
-                    <div class="card-content">
-                        <h6>Cibersegurança e Proteção de Dados</h6>
-                        <p>Prof. Pedro Oliveira</p>
-                        <p>Descubra técnicas avançadas para proteger sistemas contra ameaças cibernéticas, abordando criptografia, prevenção de ataques, conformidade regulatória e gestão de incidentes de segurança.</p>
-                        
+                    <div class="card-content space-between">
+                        <div>
+                            <h6>Cibersegurança e Proteção de Dados</h6>
+                            <p>Prof. Pedro Oliveira</p>
+                            <p>Descubra técnicas avançadas para proteger sistemas contra ameaças cibernéticas, abordando criptografia, prevenção de ataques, conformidade regulatória e gestão de incidentes de segurança.</p>
+                        </div>
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
@@ -197,7 +236,7 @@
                                 <span>4.6</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>1.589</span>
                             </div>
@@ -221,7 +260,7 @@
                         <p>Aprofunde-se em técnicas avançadas de análise de dados usando linguagens como Python e R, explorando visualizações de dados interativas e ferramentas como Tableau e Power BI.</p>
                         
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
@@ -232,7 +271,7 @@
                                 <span>4.9</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>1.150</span>
                             </div>
@@ -255,7 +294,7 @@
                         <p>Estude a tecnologia por trás das criptomoedas e contratos inteligentes, aprendendo sobre segurança, descentralização, aplicações financeiras e potenciais impactos econômicos e sociais.</p>
                         
                         <div class="flex space-between align-itens-center">
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <ul class="flex">
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
@@ -266,7 +305,7 @@
                                 <span>4.8</span>
                             </div>
 
-                            <div class="flex">
+                            <div class="flex align-itens-center">
                                 <i class="fa-solid fa-user-group"></i>
                                 <span>1.327</span>
                             </div>
@@ -285,7 +324,7 @@
         <div class="container flex-column">
             
             <h2>Vantagens</h2>
-            <div class="flex gap">
+            <div class="flex space-between">
 
                 <div class="card-vantagens">
                     <i class="fa-regular fa-clock"></i>
@@ -411,5 +450,8 @@
         </div>    
 
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
