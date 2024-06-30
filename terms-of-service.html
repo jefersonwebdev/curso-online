@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jeferson Guimarães">
+        <meta name="description" content="Descubra uma nova maneira de aprender com a Escola Online XYZ. Oferecemos cursos práticos e acessíveis em diversas áreas, com instrutores especializados. Inscreva-se agora e comece a transformar seu futuro hoje mesmo!">
+        <meta name="keywords" content="escola online, cursos online, educação a distância, aprendizado online, instrutores qualificados, ensino prático">
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- cSS Personalizado -->
+        <link rel="stylesheet" href="estilos.css">
 
-    <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Titulo da página -->
+        <title>Study | Sua escola Online</title>
     
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="estilos.css">
-    <title>Study | Sua escola Online</title>
-</head>
+    </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="header-content flex">
-            <img src="./img/logo.png" alt="logo">
-            <ul class="flex">
+        <div class="header-content">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">&#9776;</label>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#cursos">Cursos</a></li>
@@ -36,7 +50,7 @@
     <section id="main">
         <div class="container">
             
-            <div>
+            <div class="padding">
                 <h2>Termos de Serviço</h2>
                 
                 <p>Bem-vindo aos Termos de Serviço da Escola Online Study!</p>

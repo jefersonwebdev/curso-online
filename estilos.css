@@ -33,7 +33,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: var(--cinza-escuro);
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -118,6 +118,10 @@ ol li {
 .gap {
     column-gap: 10px;
     row-gap: 10px;
+}
+
+.padding {
+    padding: 20px
 }
 
 section {
